@@ -277,55 +277,50 @@ body {
   color: var(--text-muted);
 }
 
-/* Botão hambúrguer (escondido no desktop) */
 .menu-toggle {
   display: none;
-  flex-direction: column;
-  gap: 6px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1100;
 }
 
-.menu-toggle span {
-  width: 26px;
-  height: 2px;
-  background: white;
-  transition: 0.3s;
+.nav ul {
+  display: flex;
+  gap: 32px;
 }
+
 
 @media (max-width: 768px) {
 
-  /* Mostra o botão Versão MOBILE */
-  .menu-toggle {
-    display: flex;
-  }
-
-  /* Esconde menu normal Versão DESKTOP*/
+  /* Esconde o menu desktop */
   .nav {
     position: fixed;
-    inset: 0;
-    background: var(--bg-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75%;
+    background: #000;
     transform: translateX(100%);
-    transition: 0.4s ease;
+    transition: transform 0.3s ease;
+    padding-top: 80px;
   }
 
-  /* Menu ativo */
+  /* Mostra botão hambúrguer */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #0ff;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* Menu quando ativo */
   .nav.active {
     transform: translateX(0);
   }
 
-  .menu {
+  .nav ul {
     flex-direction: column;
-    gap: 30px;
-    text-align: center;
-  }
-
-  .menu a {
-    font-size: 1.5rem;
+    gap: 24px;
+    padding-left: 24px;
   }
 }
