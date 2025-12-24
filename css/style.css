@@ -276,3 +276,19 @@ body {
   border-top: 1px solid rgba(255,255,255,0.05);
   color: var(--text-muted);
 }
+
+@media (max-width: 768px) {
+
+  .logo {
+    width: 110px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .header-content {
+    padding: 14px 0;
+  }
+
+}
