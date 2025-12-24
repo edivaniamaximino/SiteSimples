@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Soluções Logísticas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soluções — LogFull</title>
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <img src="img/LogoLogfull.png" class="logo">
+<header class="header">
+  <div class="container header-content">
+    <img src="img/LogoLogfull2.png" alt="LogFull" class="logo">
+
     <nav>
-        <ul class="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="formulario.html">Contato</a></li>
-            <li><a href="solucoes.html">Soluções</a></li>
-        </ul>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="solucoes.html" class="active">Soluções</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+      </ul>
     </nav>
+  </div>
 </header>
 
-<section class="container">
+<main>
 
-    <h1>Soluções LogFull</h1>
-    <p>Nossos serviços trabalham para conectar empresas, reduzir custos e melhorar a experiência do cliente.</p>
+  
+  <section class="hero hero-small" style="background-image:url('img/home.jpeg')">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Soluções LogFull</h1>
+      <p>Tecnologia, logística e inteligência para empresas que precisam escalar.</p>
+    </div>
+  </section>
 
-    <img src="img/solucao.jpeg" class="img">
+  
+  <section class="section">
+    <div class="container">
 
-    <h2>Principais serviços:</h2>
-    <ol>
-        <li>Entrega expressa 24h</li>
-        <li>Gestão de estoque integrada</li>
-        <li>Rota inteligente com IA</li>
-    </ol>
+      <div class="solution-grid">
 
-</section>
+        <div class="solution-card">
+          <h3>Entrega Expressa</h3>
+          <p>Operações ágeis com prazos reduzidos e controle total.</p>
+        </div>
 
-<footer>
-    © 2025 LogFull - Soluções Inteligentes
+        <div class="solution-card">
+          <h3>Gestão de Estoque</h3>
+          <p>Controle integrado, redução de perdas e mais previsibilidade.</p>
+        </div>
+
+        <div class="solution-card">
+          <h3>Rota Inteligente</h3>
+          <p>Algoritmos que otimizam trajetos e reduzem custos operacionais.</p>
+        </div>
+
+        <div class="solution-card">
+          <h3>Integração Digital</h3>
+          <p>Marketplaces, ERPs e plataformas conectadas em tempo real.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+ 
+  <section class="section section-cta">
+    <div class="container cta-box">
+      <h2>Pronto para otimizar sua logística?</h2>
+      <a href="formulario.html" class="btn-primary">Fale com a LogFull</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 LogFull — Soluções Logísticas Inteligentes</p>
 </footer>
 
 </body>
