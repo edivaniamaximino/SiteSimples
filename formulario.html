@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contato — LogFull</title>
 
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato — LogFull</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="header">
-  <div class="container header-content">
-    <img src="img/LogoLogfull2.png" alt="LogFull" class="logo">
+    <script src="js/menu.js"></script>
 
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="solucoes.html">Soluções</a></li>
-        <li><a href="formulario.html" class="active">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <header class="header">
+        <div class="container header-content">
+            <img src="img/LogoLogfull2.png" alt="LogFull" class="logo">
 
-<main>
+            <!-- BOTÃO HAMBURGUER -->
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-  
-  <section class="hero hero-small">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Fale com a LogFull</h1>
-      <p>Vamos entender sua operação e criar a melhor solução logística.</p>
-    </div>
-  </section>
-
-  
-  <section class="section">
-    <div class="container">
-
-      <form class="contact-form">
-
-        <div class="form-group">
-          <label>Nome</label>
-          <input type="text" placeholder="Seu nome completo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="solucoes.html">Soluções</a></li>
+                    <li><a href="formulario.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" placeholder="email@empresa.com">
-        </div>
+    <main>
 
-        <div class="form-group">
-          <label>Tipo de solicitação</label>
-          <select>
-            <option>Orçamento logístico</option>
-            <option>Suporte</option>
-            <option>Dúvidas gerais</option>
-          </select>
-        </div>
 
-        <div class="form-group">
-          <label>Mensagem</label>
-          <textarea rows="5" placeholder="Conte um pouco sobre sua necessidade"></textarea>
-        </div>
+        <section class="hero hero-small">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Fale com a LogFull</h1>
+                <p>Vamos entender sua operação e criar a melhor solução logística.</p>
+            </div>
+        </section>
 
-        <button class="btn-primary btn-full">Enviar mensagem</button>
 
-      </form>
+        <section class="section">
+            <div class="container">
 
-    </div>
-  </section>
+                <form class="contact-form">
 
-</main>
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Seu nome completo">
+                    </div>
 
-<footer class="footer">
-  <p>© 2025 LogFull — Soluções Logísticas Inteligentes</p>
-</footer>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="email@empresa.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo de solicitação</label>
+                        <select>
+                            <option>Orçamento logístico</option>
+                            <option>Suporte</option>
+                            <option>Dúvidas gerais</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea rows="5" placeholder="Conte um pouco sobre sua necessidade"></textarea>
+                    </div>
+
+                    <button class="btn-primary btn-full">Enviar mensagem</button>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 LogFull — Soluções Logísticas Inteligentes</p>
+    </footer>
 
 </body>
+
 </html>

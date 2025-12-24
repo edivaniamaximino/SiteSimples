@@ -277,18 +277,55 @@ body {
   color: var(--text-muted);
 }
 
+/* Botão hambúrguer (escondido no desktop) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
 @media (max-width: 768px) {
 
-  .logo {
-    width: 110px;
+  /* Mostra o botão Versão MOBILE */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Esconde menu normal Versão DESKTOP*/
+  .nav {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: 0.4s ease;
+  }
+
+  /* Menu ativo */
+  .nav.active {
+    transform: translateX(0);
   }
 
   .menu {
-    gap: 20px;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
   }
 
-  .header-content {
-    padding: 14px 0;
+  .menu a {
+    font-size: 1.5rem;
   }
-
 }
