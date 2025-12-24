@@ -14,16 +14,18 @@
 
 <body>
 
-    <script src="js/menu.js"></script>
-
     <header class="header">
         <div class="container header-content">
-            <img src="img/LogoLogfull2.png" alt="LogFull" class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="img/LogoLogfull2.png" alt="LogFull" class="logo">
+            </a>
 
-            <!-- BOTÃO HAMBURGUER -->
-            <button class="menu-toggle">☰</button>
 
-            <nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <nav class="nav">
                 <ul class="menu">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="solucoes.html">Soluções</a></li>
@@ -86,6 +88,8 @@
     <footer class="footer">
         <p>© 2025 LogFull — Soluções Logísticas Inteligentes</p>
     </footer>
+
+    <script src="js/menu.js"></script>
 
 </body>
 
