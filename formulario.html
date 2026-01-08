@@ -52,21 +52,21 @@
         <section class="section">
             <div class="container">
 
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
 
                     <div class="form-group">
                         <label>Nome</label>
-                        <input type="text" placeholder="Seu nome completo">
+                        <input type="text" name="nome" required placeholder="Seu nome completo">
                     </div>
 
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="email" placeholder="email@empresa.com">
+                        <input type="email" name="email" required placeholder="email@empresa.com">
                     </div>
 
                     <div class="form-group">
                         <label>Tipo de solicitação</label>
-                        <select>
+                        <select name="tipo">
                             <option>Orçamento logístico</option>
                             <option>Suporte</option>
                             <option>Dúvidas gerais</option>
@@ -75,10 +75,15 @@
 
                     <div class="form-group">
                         <label>Mensagem</label>
-                        <textarea rows="5" placeholder="Conte um pouco sobre sua necessidade"></textarea>
+                        <textarea name="mensagem" rows="5" required
+                            placeholder="Conte um pouco sobre sua necessidade"></textarea>
                     </div>
 
-                    <button class="btn-primary btn-full">Enviar mensagem</button>
+                    <button type="submit" class="btn-primary btn-full">
+                        Enviar mensagem
+                    </button>
+
+                    <p class="form-success">Obrigado!</p>
 
                 </form>
 
@@ -92,6 +97,8 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
+
 
 </body>
 

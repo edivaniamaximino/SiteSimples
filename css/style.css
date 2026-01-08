@@ -131,10 +131,13 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
+    
+    
 }
 
 .btn-primary:hover {
     background: #ff6a00;
+    
 }
 
 
@@ -239,6 +242,7 @@ body {
     background: var(--bg-light);
     padding: 50px;
     border-radius: 20px;
+    
 }
 
 .form-group {
@@ -250,6 +254,7 @@ body {
 .form-group label {
     margin-bottom: 8px;
     color: var(--text-muted);
+    
 }
 
 .form-group input,
@@ -271,7 +276,9 @@ body {
 .btn-full {
     width: 100%;
     cursor: pointer;
+    
 }
+
 
 .footer {
     padding: 40px 0;
@@ -379,4 +386,11 @@ body {
 .menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg);
     top: 10px;
+}
+.form-success {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  color:#b5b9c2;
+  font-weight: 600;
 }
