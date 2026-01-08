@@ -2,99 +2,82 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soluções — LogFull</title>
+  <meta charset="UTF-8">
+  <title>Mensagem enviada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #101820;
+      color: #fff;
+      font-family: Inter, sans-serif;
+
+      /* Centralização */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .box {
+      max-width: 520px;
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+
+    h1 {
+      font-size: clamp(28px, 6vw, 48px);
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: clamp(16px, 4vw, 20px);
+      color: #b5b9c2;
+      margin-bottom: 40px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #ff6a00;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255,106,0,0.35);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container header-content">
-            <a href="index.html" class="logo-link">
-                <img src="img/LogoLogfull2.png" alt="LogFull" class="logo">
-            </a>
+  <div class="box">
+    <h1>Mensagem enviada com sucesso</h1>
+    <p>Recebemos seu contato e em breve retornaremos.</p>
 
+    <a href="index.html">Voltar para o site</a>
+  </div>
 
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="solucoes.html" class="active">Soluções</a></li>
-                    <li><a href="formulario.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-
-
-        <section class="hero hero-small" style="background-image:url('img/home.jpeg')">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>Soluções LogFull</h1>
-                <p>Tecnologia, logística e inteligência para empresas que precisam escalar.</p>
-            </div>
-        </section>
-
-
-        <section class="section">
-            <div class="container">
-
-                <div class="solution-grid">
-
-                    <div class="solution-card">
-                        <h3>Entrega Expressa</h3>
-                        <p>Operações ágeis com prazos reduzidos e controle total.</p>
-                    </div>
-
-                    <div class="solution-card">
-                        <h3>Gestão de Estoque</h3>
-                        <p>Controle integrado, redução de perdas e mais previsibilidade.</p>
-                    </div>
-
-                    <div class="solution-card">
-                        <h3>Rota Inteligente</h3>
-                        <p>Algoritmos que otimizam trajetos e reduzem custos operacionais.</p>
-                    </div>
-
-                    <div class="solution-card">
-                        <h3>Integração Digital</h3>
-                        <p>Marketplaces, ERPs e plataformas conectadas em tempo real.</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="section section-cta">
-            <div class="container cta-box">
-                <h2>Pronto para otimizar sua logística?</h2>
-                <a href="formulario.html" class="btn-primary">Fale com a LogFull</a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>© 2025 LogFull — Soluções Logísticas Inteligentes</p>
-    </footer>
-
-    <script src="./js/menu.js"></script>
-    
 </body>
-
 </html>
